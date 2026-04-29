@@ -40,7 +40,7 @@ class TaskCLI(cmd.Cmd):
         }
         tasks.append(task)
         save_tasks(tasks)
-        print("Added task")
+        print(f"Added task (ID: {task['id']})")
 
     def do_update(self,arg):
         """update <id> <description>"""
